@@ -6,13 +6,12 @@ if (navigator.serviceWorker) {
 
 ;("use strict")
 
-function addAgeClicked () {
+function addAgeClicked() {
   const aBase = parseInt(document.getElementById("abase").value)
   const bBase = parseInt(document.getElementById("bbase").value)
   const height = parseInt(document.getElementById("height").value)
-  
+
   const area = ((aBase + bBase) / 2) * height
 
-  document.getElementById('area').innerHTML = 'Area is: ' + area + ' mm²'
+  document.getElementById("area").innerHTML = "Area is: " + area + " mm²"
 }
-
