@@ -6,16 +6,13 @@ if (navigator.serviceWorker) {
 
 ;("use strict")
 
-function calculate() {
-  const length = parseInt(document.getElementById("pay").value)
-  const width = parseInt(document.getElementById("pay2").value)
+function addAgeClicked () {
+  const aBase = parseInt(document.getElementById("abase").value)
+  const bBase = parseInt(document.getElementById("bbase").value)
+  const height = parseInt(document.getElementById("height").value)
+  
+  const area = ((aBase + bBase) / 2) * height
 
-  const area = length * width * 0.18
-  const perimeter = length * width * (1.0 - 0.18)
-  const TAX_RATE = 0.18
-
-  document.getElementById("area").innerHTML =
-    "The governemnt will take: " + area + "$"
-  document.getElementById("perimeter").innerHTML =
-    "your pay will be: " + perimeter + "$"
+  document.getElementById('area').innerHTML = 'Area is: ' + area + ' mm²'
 }
+
