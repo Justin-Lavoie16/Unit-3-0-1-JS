@@ -1,7 +1,3 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
-*/
 
 .mdl-layout__header-row {
   align-items: center;
@@ -14,8 +10,6 @@
   padding-top: 15pt;
 }
 
-/* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
-*/
 .mdl-ripple {
   background: #000;
   opacity: 0.001;
